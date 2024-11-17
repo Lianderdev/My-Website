@@ -19,6 +19,7 @@ html {
 }
 
 body {
+    height: 2000px;
     color: var(--zinc-50);
     background-color: var(--zinc-950);
 }
@@ -27,6 +28,6 @@ main, footer, header {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 

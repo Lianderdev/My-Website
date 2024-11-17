@@ -1,8 +1,11 @@
+import { Header } from "./components/layoult/Header";
+
 export function App() {
   return (
     <>
+      <Header />
       <main>
-        <h1>hello my website</h1>
+
       </main>
     </>
   )
