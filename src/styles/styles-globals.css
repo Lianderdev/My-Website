@@ -19,20 +19,27 @@ html {
 }
 
 body {
-    height: 2000px;
     color: var(--zinc-50);
     background-color: var(--zinc-950);
 }
 
 main, footer, header {
     width: 100%;
-    max-width: 1024px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
+section > div {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
 main {
     margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 h1 {
