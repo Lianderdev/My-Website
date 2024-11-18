@@ -32,7 +32,12 @@ main, footer, header {
 
 section > div {
     font-size: 1.3rem;
-    margin-bottom: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 main {
