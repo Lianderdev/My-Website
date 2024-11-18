@@ -14,7 +14,7 @@ import {
 
 export function Projects() {
     return (
-        <section>
+        <section id="projects">
             <div className="flex items-center gap-3">
                 <GoProjectSymlink />
                 <h2>Projetos</h2>

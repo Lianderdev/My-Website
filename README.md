@@ -1,8 +1,29 @@
-# React + Vite
+## Meu Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este portfólio foi desenvolvido para mostrar minhas habilidades em desenvolvimento web e projetos realizados ao longo da minha jornada com Desenvolvedor Front-end. 
 
-Currently, two official plugins are available:
+## Link para acessar o portfólio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Você pode acessar meu portfólio ao vivo através do seguinte link:
+[https://lianderdev-portfolio.vercel.app/](https://lianderdev-portfolio.vercel.app/)
+
+## Tecnologias Utilizadas
+
+- **HTML**: Estrutura básica do site.
+- **CSS**: Estilização e layout responsivo.
+- **JavaScript**: Interatividade e funcionalidades dinâmicas.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Tailwind CSS**: Framework CSS para estilização rápida e eficiente.
+- **ShadCN UI**: Biblioteca de componentes UI que oferece um conjunto de elementos estilizados e prontos para uso.
+- **Email.js**: Para envio de mensagens através do formulário de contato.
+
+## Seções
+
+- **Home**: Uma visão geral de quem sou e do que faço.
+- **Projetos**: Exibição de meus projetos com descrições e links.
+- **Sobre Mim**: Informações pessoais e profissionais.
+- **Contato**: Formulário para que visitantes possam entrar em contato comigo.
+
+## Responsividade e Acessibilidade
+
+O portfólio foi projetado com uma abordagem responsiva, garantindo que ele funcione bem em dispositivos móveis, tablets e desktops. 

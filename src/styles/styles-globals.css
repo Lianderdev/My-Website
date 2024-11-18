@@ -42,12 +42,17 @@ section {
 
 main {
     margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+}
+
+section  {
+    padding-top: 4.5rem;
 }
 
 h1 {
+    font-family: 'MinhaFonte', sans-serif;
+}
+
+footer, p {
     font-family: 'MinhaFonte', sans-serif;
 }
 

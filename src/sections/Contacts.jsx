@@ -5,7 +5,7 @@ import { PiBookBookmarkThin } from "react-icons/pi";
 
 export function Contact() {
     return (
-        <section>
+        <section id="contacts">
             <div className="flex items-center gap-2">
                 <PiBookBookmarkThin />
                 <h2>Contact</h2>
@@ -14,12 +14,12 @@ export function Contact() {
             <form className='flex flex-col gap-8 border bg-zinc-950 p-4 rounded-lg'>
                 <div className='grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4'>
                     <Input label="name" type="text" id="name" aria-label="Nome" placeholder="Digite seu nome" required />
-                    <Input label="e-mail" type="text" id="e-mail" aria-label="Email" placeholder="Digite seu E-mail" required />
+                    <Input label="Email" type="text" id="e-mail" aria-label="Email" placeholder="Digite seu E-mail" required />
                 </div>
                 <div className='flex flex-col gap-2'>
                     <label className="text-base" htmlFor="message">Mensagem</label>
                     <textarea
-                        className="text-base max-h-60 max-w-full border rounded-[5px] p-2 bg-zinc-950 text-zinc-50 font-medium focus:border-white"
+                        className="text-base max-h-50 max-w-full border rounded-[5px] p-2 bg-zinc-950 text-zinc-50 font-medium focus:border-white"
                         cols="30"
                         rows="10"
                         id="message"
