@@ -1,5 +1,6 @@
 import { Header } from "./components/layoult/Header";
 import { Home } from "./sections/Home";
+import { Projects } from "./sections/Projects";
 import { Tools } from "./sections/Tools";
 
 export function App() {
@@ -9,6 +10,7 @@ export function App() {
       <main>
         <Home />
         <Tools />
+        <Projects />
       </main>
     </>
   )

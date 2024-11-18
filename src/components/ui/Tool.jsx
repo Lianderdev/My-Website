@@ -5,7 +5,7 @@ export function Tool({ name, color, Icon }) {
                 <Icon />
             </div>
             <div className="border-t">
-                <p className="text-sm uppercase font-semibold px-4 py-2">{name}</p>
+                <p className="text-sm capitalize px-4 py-2 tracking-wide">{name}</p>
             </div>
         </li>
     )

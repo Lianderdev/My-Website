@@ -11,7 +11,7 @@ export function Home() {
             <div className="flex flex-col gap-3">
                 <p className="text-base font-medium">Olá! eu sou o liander vinícius 🧙‍♂️ e atuo como</p>
                 <h1 className="max-w-3xl text-4xl font-bold tracking-wide">Desenvolvedor front-end & técnico em informática</h1>
-                <p className="max-w-2xl text-base pl-[2px] text-zinc-300 xs:text-3xl"> Apaixonado por criar interfaces intuitivas e acessíveis, alinhadas às necessidades dos usuários e aos objetivos da empresa.</p>
+                <p className="max-w-2xl text-xl pl-[2px] text-zinc-300 "> Apaixonado por criar interfaces intuitivas e acessíveis, alinhadas às necessidades dos usuários e aos objetivos da empresa.</p>
 
                 <div className="flex gap-4">
                     <div className="flex items-center gap-1 px-1">
@@ -32,7 +32,7 @@ export function Home() {
                         </Button>
                     </a>
                     <a href="#">
-                        <Button className="w-full flex flex-col text-base relative">
+                        <Button className="w-full flex flex-col gap-0 text-base relative">
                             Currículo
                             <span className="text-[10px] text-blue-500 -mt-2">( Download )</span>
                         </Button>
