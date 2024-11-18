@@ -31,3 +31,15 @@ main, footer, header {
     padding: 0 1rem;
 }
 
+main {
+    margin-top: 5rem;
+}
+
+h1 {
+    font-family: 'MinhaFonte', sans-serif;
+}
+
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('../assets/fonts/Geist-Regular.ttf');
+}
