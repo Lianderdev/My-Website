@@ -6,8 +6,8 @@ export function Tools() {
     return (
         <section id="tecnologies">
             <div className="flex items-center gap-3">
-                <MdOutlineComputer />
-                <h2>Tecnologias e Ferramentas</h2>
+                <MdOutlineComputer className="text-base md:text-xl"/>
+                <h2 className="text-base md:text-xl">Tecnologias e Ferramentas</h2>
             </div>
             <ul className='flex flex-wrap gap-4 mb-6'>
                 {tools.map(tool => (

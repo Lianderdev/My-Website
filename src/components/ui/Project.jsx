@@ -15,10 +15,10 @@ export function Project({ title, link, img, github }) {
                     </a>
                 </div>
                 <div className="flex flex-col gap-2 mt-2">
-                    <h3 className="text-lg capitalize ">{title}</h3>
+                    <h3 className="text-base capitalize ">{title}</h3>
                     <div className="flex gap-2">
-                        <a href={github} target="_blank" className="text-xs tracking-wider bg-zinc-900 hover:bg-zinc-800 px-2 py-1 rounded-lg uppercase font-medium transition-colors duration-600">Github</a>
-                        <a href={link} target="_blank" className="text-xs tracking-wider bg-zinc-900 hover:bg-zinc-800 px-2 py-1 rounded-lg uppercase font-medium transition-colors duration-600">Deploy</a>
+                        <a href={github} target="_blank" className="text-[10px] tracking-wider bg-zinc-900 hover:bg-zinc-800 px-2 py-1 rounded-lg uppercase font-medium transition-colors duration-600">Github</a>
+                        <a href={link} target="_blank" className="text-[10px] tracking-wider bg-zinc-900 hover:bg-zinc-800 px-2 py-1 rounded-lg uppercase font-medium transition-colors duration-600">Deploy</a>
                     </div>
                 </div>
             </CardContent>
