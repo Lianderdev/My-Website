@@ -19,7 +19,7 @@ export function Contact() {
                 <div className='flex flex-col gap-2 text-xs md:text-sm'>
                     <label htmlFor="message">Mensagem</label>
                     <textarea
-                        className=" max-h-50 max-w-full border rounded-[5px] p-2 bg-zinc-950 text-zinc-50 font-medium focus:border-white"
+                        className=" max-h-40 max-w-full border rounded-[5px] p-2 bg-zinc-950 text-zinc-50 font-medium focus:border-white"
                         cols="30"
                         rows="10"
                         id="message"
