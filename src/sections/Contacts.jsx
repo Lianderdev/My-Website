@@ -1,17 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "../components/ui/Input";
+import { motion } from "framer-motion"
 
-import { PiBookBookmarkThin } from "react-icons/pi";
+import { RiContactsBookLine } from "react-icons/ri";
 
 export function Contact() {
     return (
         <section id="contacts">
             <div className="flex items-center gap-2 text-base sm:text-lg md:text-xl">
-                <PiBookBookmarkThin />
-                <h2>Contact</h2>
+                <RiContactsBookLine />
+                <h2>Contatos</h2>
             </div>
 
-            <form className='flex flex-col gap-8 border bg-zinc-950 p-4 rounded-lg'>
+            <form className='flex flex-col gap-4 border bg-zinc-950 p-4 rounded-lg'>
                 <div className='grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4'>
                     <Input label="name" type="text" id="name" aria-label="Nome" placeholder="Digite seu nome" required />
                     <Input label="Email" type="text" id="e-mail" aria-label="Email" placeholder="Digite seu E-mail" required />
@@ -28,6 +29,7 @@ export function Contact() {
                         aria-label="Mensagem"
                     />
                 </div>
+                <Button>Enviar Mensagem</Button>
             </form>
 
             <p className="text-xs md:text-sm text-zinc-400">Ou, se preferir, entre em contato por meio destas redes sociais: 

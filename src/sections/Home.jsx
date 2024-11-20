@@ -3,6 +3,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { FaRegPaperPlane } from "react-icons/fa";
 import { PiHandPeaceDuotone } from "react-icons/pi";
 
+import { motion } from "framer-motion"
 import myFuture from '../assets/img/teste.png'
 import '../styles/animations.css'
 
@@ -10,8 +11,8 @@ export function Home() {
     return (
         <section id="home" className="pt-6 flex-row items-center gap-3">
             <div className="flex flex-col gap-3">
-                <p className="text-sm md:text-base font-medium text-zinc-300 flex items-center gap-2">Olá! eu sou o liander vinícius <PiHandPeaceDuotone /> </p>
-                <h1 className="max-w-3xl text-3xl md:text-3xl font-bold tracking-wide">Desenvolvedor front-end & técnico em informática</h1>
+                <p className="text-sm md:text-base font-medium text-zinc-300 flex items-center gap-2">Olá! eu sou o liander vinícius <PiHandPeaceDuotone className="text-xl"/> </p>
+                <h1 className="max-w-3xl text-2xl md:text-4xl font-bold tracking-wide">Desenvolvedor front-end & técnico em informática</h1>
                 <p className="max-w-2xl text-sm md:text-lg pl-[2px] text-zinc-300"> Apaixonado por criar interfaces intuitivas e acessíveis, alinhadas às necessidades dos usuários e aos objetivos da empresa.</p>
 
                 <div className="flex gap-4">
@@ -26,18 +27,25 @@ export function Home() {
                 </div>
 
                 <div className="w-full max-w-xl grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-4">
-                    <a href="#" className="relative">
-                        <Button variant="outline" className="w-full text:sm md:text-base gap-4">
+                    <motion.a 
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.9 }} 
+                    href="#" className="relative">
+                        <Button
+                         variant="outline" className="w-full text:sm md:text-base gap-4">
                             Fale comigo
                             <FaRegPaperPlane className="text-zinc-500" />
                         </Button>
-                    </a>
-                    <a href="#">
+                    </motion.a>
+                    <motion.a 
+                     whileHover={{ scale: 1.05 }}
+                     whileTap={{ scale: 0.9 }} 
+                     href="#">
                         <Button className="w-full flex flex-col gap-1 md:gap-0 text:sm md:text-base relative">
                             Currículo
                             <span className="text-[10px] text-blue-500 -mt-2">( Download )</span>
                         </Button>
-                    </a>
+                    </motion.a>
                 </div>
             </div>
             <div className="hidden lg:flex">

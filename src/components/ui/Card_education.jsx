@@ -3,7 +3,7 @@ import { IoCalendarClearOutline } from "react-icons/io5";
 export function CardEducation({img, curso, nivel, instituicao, data }) {
     return (
         <div className="flex gap-2 relative border p-4 rounded-xl">
-            <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 bg-zinc-50 rounded-lg overflow-hidden">
+            <div className="w-8 h-8 flex items-center justify-center flex-shrink-0 bg-zinc-50 rounded-lg overflow-hidden mt-1">
                 <img src={img} alt={curso}/>
             </div>
             <div className='flex flex-col gap-1 pl-2'>
