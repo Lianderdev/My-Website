@@ -12,7 +12,7 @@ export function Header() {
         <header className="bg-colorHeader backdrop-blur-xl flex justify-between items-center py-5 fixed top-0 left-1/2 -translate-x-1/2 z-50">
             <div className="flex items-center gap-4">
                 <a href="#home"><Soon /></a>
-                <Navigation />
+                
             </div>
             <div className="flex items-center gap-1 text-2xl  text-zinc-700">
                 <a href="#" className="hover:text-zinc-50 duration-200 transition-colors"><FiGithub className="w-7 h-7 p-1" /></a>

@@ -6,7 +6,7 @@ import { PiBookBookmarkThin } from "react-icons/pi";
 export function Contact() {
     return (
         <section id="contacts">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 text-base sm:text-lg md:text-xl">
                 <PiBookBookmarkThin />
                 <h2>Contact</h2>
             </div>
@@ -16,10 +16,10 @@ export function Contact() {
                     <Input label="name" type="text" id="name" aria-label="Nome" placeholder="Digite seu nome" required />
                     <Input label="Email" type="text" id="e-mail" aria-label="Email" placeholder="Digite seu E-mail" required />
                 </div>
-                <div className='flex flex-col gap-2'>
-                    <label className="text-base" htmlFor="message">Mensagem</label>
+                <div className='flex flex-col gap-2 text-xs md:text-sm'>
+                    <label htmlFor="message">Mensagem</label>
                     <textarea
-                        className="text-base max-h-50 max-w-full border rounded-[5px] p-2 bg-zinc-950 text-zinc-50 font-medium focus:border-white"
+                        className=" max-h-50 max-w-full border rounded-[5px] p-2 bg-zinc-950 text-zinc-50 font-medium focus:border-white"
                         cols="30"
                         rows="10"
                         id="message"
@@ -30,9 +30,9 @@ export function Contact() {
                 </div>
             </form>
 
-            <p className="text-lg text-zinc-400">Ou, se preferir, entre em contato por meio destas redes sociais:
-                <Button className='text-base h-6' variant="link"><a href="https://www.linkedin.com/in/liander-vin%C3%ADcius/">Linkedin</a></Button> /
-                <Button className='text-base h-6' variant="link"><a href="https://github.com/Lianderdev">Github</a></Button>
+            <p className="text-xs md:text-sm text-zinc-400">Ou, se preferir, entre em contato por meio destas redes sociais: 
+                <Button className='text-xs md:text-sm h-6 px-1' variant="link"><a href="https://www.linkedin.com/in/liander-vin%C3%ADcius/">Linkedin</a></Button> /
+                <Button className='text-xs md:text-sm h-6 px-1' variant="link"><a href="https://github.com/Lianderdev">Github</a></Button>
             </p>
         </section>
     )

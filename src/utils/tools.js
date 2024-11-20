@@ -1,13 +1,4 @@
 //My tools and tecnologies
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaHtml5 } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io";
-import { FaJs } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { FaGitAlt } from "react-icons/fa";
-import { SiShadcnui } from "react-icons/si";
-import { SiVite } from "react-icons/si";
-import { TbBrandFramerMotion } from "react-icons/tb";
 
 import vitejs from "../assets/img/vitejs.svg"
 import js from "../assets/img/js.png"
