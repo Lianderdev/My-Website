@@ -11,8 +11,9 @@ export function Home() {
     return (
         <section id="home" className="pt-6 flex-row items-center gap-3">
             <div className="flex flex-col gap-3">
-                <p className="text-sm md:text-base font-medium text-zinc-300 flex items-center gap-2">Olá! eu sou o liander vinícius <PiHandPeaceDuotone className="text-xl"/> </p>
-                <h1 className="max-w-3xl text-2xl md:text-4xl font-bold tracking-wide">Desenvolvedor front-end & técnico em informática</h1>
+                <h1 className="max-w-4xl text-2xl md:text-4xl font-bold tracking-wide">
+                    Olá! eu sou o liander souza, e atuo como desenvolvedor front-end & técnico em informática
+                </h1>
                 <p className="max-w-2xl text-sm md:text-lg pl-[2px] text-zinc-300"> Apaixonado por criar interfaces intuitivas e acessíveis, alinhadas às necessidades dos usuários e aos objetivos da empresa.</p>
 
                 <div className="flex gap-4">
@@ -47,9 +48,6 @@ export function Home() {
                         </Button>
                     </motion.a>
                 </div>
-            </div>
-            <div className="hidden lg:flex">
-                <img src={myFuture} alt="" />
             </div>
         </section>
     )
