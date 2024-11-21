@@ -11,6 +11,7 @@ module.exports = {
 			},
 			colors: {
 				colorHeader: '#09090ba6',
+				modal: '#00000080',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				card: {

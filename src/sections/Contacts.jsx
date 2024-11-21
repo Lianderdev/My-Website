@@ -6,6 +6,8 @@ import { useRef, useState } from "react";
 
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
+import { ModalSendFailed, ModalSendSucess } from "../components/modals/Modals";
+
 export function Contact() {
     const nameRef = useRef()
     const emailRef = useRef()
@@ -25,18 +27,22 @@ export function Contact() {
         const message = messageRef.current?.value?.trim();
 
         if (name && email && message) {
-            const templateParams = {from_name: name, message: message, email: email}
+            const templateParams = { from_name: name, message: message, email: email }
 
             emailjs.send('service_s8dqj6i', 'template_30r3d2g', templateParams, 'dyXZYpcE0VEwEM0vN')
-            .then(() => {
-                setModalSucess(true)
-            }).catch((err) => {
-                setModalFailed(true)
-            }).finally(() => {
-                setIsLoading(false)
-            })
+                .then(() => {
+                    setModalSucess(true)
+                }).catch((err) => {
+                    setModalFailed(true)
+                }).finally(() => {
+                    setIsLoading(false)
+                })
         }
+    }
 
+    function closeModal() {
+        setModalSucess(false);
+        setModalFailed(false);
     }
 
     return (
@@ -65,23 +71,35 @@ export function Contact() {
                     />
                 </div>
                 <Button type='submit' className="text:sm md:text-base">
-                    {isLoading ? 
-                    (<div className="flex items-center gap-2">
-                        <AiOutlineLoading3Quarters className="isloading"/>
-                        <p className="font-bold">Carregando</p>
-                    </div>)
-                    : 
-                    (<p className="font-bold">
-                        Enviar Mensagem
-                    </p>)
+                    {isLoading ?
+                        (<div className="flex items-center gap-2">
+                            <AiOutlineLoading3Quarters className="isloading" />
+                            <p className="font-bold">Carregando</p>
+                        </div>)
+                        :
+                        (<p className="font-bold">
+                            Enviar Mensagem
+                        </p>)
                     }
                 </Button>
             </form>
 
-            <p className="text-xs md:text-sm text-zinc-400">Ou, se preferir, entre em contato por meio destas redes sociais: 
+            <p className="text-xs md:text-sm text-zinc-400">Ou, se preferir, entre em contato por meio destas redes sociais:
                 <Button className='text-xs md:text-sm h-6 px-1' variant="link"><a href="https://www.linkedin.com/in/liander-vin%C3%ADcius/">Linkedin</a></Button> /
                 <Button className='text-xs md:text-sm h-6 px-1' variant="link"><a href="https://github.com/Lianderdev">Github</a></Button>
             </p>
+
+            {modalSucess && (
+                <div className='fixed top-0 left-0 w-full h-full flex justify-center items-center z-50 bg-modal ooverflow-y-hidden'>
+                    <ModalSendSucess close={closeModal} />
+                </div>
+            )
+            }
+            {modalFailed && (
+                <div className='fixed top-0 left-0 w-full h-full flex justify-center items-center z-50 bg-modal overflow-y-hidden'>
+                    <ModalSendFailed close={closeModal} />
+                </div>
+            )}
         </section>
     )
 }
