@@ -5,12 +5,21 @@
     50% {
       box-shadow: 0 0 0px 4px rgba(73, 180, 73, 0.478);
     }
-    100% {
+  100% {
       box-shadow: 0 0 0px 1px rgba(0, 255, 0, 0);
-    }
   }
+}
   
-  .circle {
-    animation: shadow-pulse 2s infinite;
-  }
+.circle {
+  animation: shadow-pulse 2s infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.isloading {
+  animation: spin 1s linear infinite;
+}
   
