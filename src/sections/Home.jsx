@@ -1,15 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { CiLocationOn } from "react-icons/ci";
 import { FaRegPaperPlane } from "react-icons/fa";
-import { PiHandPeaceDuotone } from "react-icons/pi";
-
 import { motion } from "framer-motion"
-import myFuture from '../assets/img/teste.png'
 import '../styles/animations.css'
 
 export function Home() {
     return (
-        <section id="home" className="pt-6 flex-row items-center gap-3">
+        <section id="home" className="pt-7 md:pt-16 flex-row items-center gap-3">
             <div className="flex flex-col gap-3">
                 <h1 className="max-w-4xl text-2xl md:text-4xl font-bold tracking-wide">
                     Olá! eu sou o liander souza, e atuo como desenvolvedor front-end & técnico em informática
