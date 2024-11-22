@@ -5,7 +5,7 @@ import { IoSchoolOutline } from "react-icons/io5";
 export function Formations() {
     return (
         <section>
-            <div  className="flex items-center gap-2 text-base sm:text-lg md:text-xl">
+            <div className="flex items-center gap-2 text-base sm:text-lg md:text-xl">
                 <IoSchoolOutline />
                 <h2>Formações</h2>
             </div>

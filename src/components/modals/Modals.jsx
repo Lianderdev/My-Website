@@ -7,9 +7,9 @@ import { HiOutlineRocketLaunch } from "react-icons/hi2";
 
 export function ModalSendSucess({close}) {
     return (
-        <div className='w-full max-w-[500px] rounded-xl relative mx-8 bg-zinc-950'>
+        <div className='w-full max-w-[500px] rounded-xl relative mx-4 bg-zinc-950'>
         <Alert className='relative h-auto flex flex-col gap-1 pl-7 py-4'>
-            <HiOutlineRocketLaunch className="h-6 w-6 mt-2 ml-1"/>
+            <HiOutlineRocketLaunch className="h-6 w-6 mt-2"/>
             <AlertTitle>Mensagem enviada!</AlertTitle>
             <AlertDescription className='text-zinc-400'>
                 Obrigado! Responderemos o mais rápido possível.
@@ -23,7 +23,7 @@ export function ModalSendSucess({close}) {
 
 export function ModalSendFailed({ close }) {
     return (
-        <div className='w-full max-w-[500px] rounded-xl relative mx-8 bg-zinc-950'>
+        <div className='w-full max-w-[500px] rounded-xl relative mx-4 bg-zinc-950'>
         <Alert className='relative h-auto flex flex-col gap-1 pl-7 py-4'>
             <TbAlertTriangle className="h-6 w-6 mt-2 ml-1"/>
             <AlertTitle>Erro ao enviar a mensagem enviada!</AlertTitle>

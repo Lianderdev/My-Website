@@ -9,12 +9,13 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { ModalSendFailed, ModalSendSucess } from "../components/modals/Modals";
 
 export function Contact() {
+
     const nameRef = useRef()
     const emailRef = useRef()
     const messageRef = useRef()
 
     const [isLoading, setIsLoading] = useState(false)
-    const [modalSucess, setModalSucess] = useState(false);
+    const [modalSuccess, setModalSuccess] = useState(false);
     const [modalFailed, setModalFailed] = useState(false);
 
     function sendEmail(event) {
@@ -31,8 +32,8 @@ export function Contact() {
 
             emailjs.send('service_s8dqj6i', 'template_30r3d2g', templateParams, 'dyXZYpcE0VEwEM0vN')
                 .then(() => {
-                    setModalSucess(true)
-                }).catch((err) => {
+                    setModalSuccess(true)
+                }).catch(() => {
                     setModalFailed(true)
                 }).finally(() => {
                     setIsLoading(false)
@@ -41,7 +42,7 @@ export function Contact() {
     }
 
     function closeModal() {
-        setModalSucess(false);
+        setModalSuccess(false);
         setModalFailed(false);
     }
 
@@ -89,12 +90,12 @@ export function Contact() {
                 <Button className='text-xs md:text-sm h-6 px-1' variant="link"><a href="https://github.com/Lianderdev">Github</a></Button>
             </p>
 
-            {modalSucess && (
+            {modalSuccess && (
                 <div className='fixed top-0 left-0 w-full h-full flex justify-center items-center z-50 bg-modal ooverflow-y-hidden'>
                     <ModalSendSucess close={closeModal} />
                 </div>
-            )
-            }
+            )}
+
             {modalFailed && (
                 <div className='fixed top-0 left-0 w-full h-full flex justify-center items-center z-50 bg-modal overflow-y-hidden'>
                     <ModalSendFailed close={closeModal} />

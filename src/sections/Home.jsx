@@ -8,7 +8,7 @@ export function Home() {
     return (
         <section id="home" className="pt-7 md:pt-16 flex-row items-center gap-3">
             <div className="flex flex-col gap-3">
-                <h1 className="max-w-4xl text-2xl md:text-4xl font-bold tracking-wide">
+                <h1 className="max-w-4xl text-2xl md:text-4xl font-black tracking-wide">
                     Olá! eu sou o liander souza, e atuo como desenvolvedor front-end & técnico em informática
                 </h1>
                 <p className="max-w-2xl text-sm md:text-lg pl-[2px] text-zinc-300"> Apaixonado por criar interfaces intuitivas e acessíveis, alinhadas às necessidades dos usuários e aos objetivos da empresa.</p>
