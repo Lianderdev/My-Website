@@ -1,12 +1,12 @@
 import { CardEducation } from "@/components/ui/Card_education";
 import { formations } from "@/utils/formations";
-import { IoSchoolOutline } from "react-icons/io5";
+import { PiBooksThin } from "react-icons/pi";
 
 export function Formations() {
     return (
         <section>
             <div className="flex items-center gap-2 text-base sm:text-lg md:text-xl">
-                <IoSchoolOutline />
+                <PiBooksThin />
                 <h2>Formações</h2>
             </div>
 

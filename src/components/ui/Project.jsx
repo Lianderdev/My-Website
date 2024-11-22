@@ -1,5 +1,5 @@
 import { MdArrowOutward } from "react-icons/md";
-import { PiGlobeDuotone } from "react-icons/pi";
+import { CiGlobe } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
 
 import { Card, CardContent } from "../ui/card"
@@ -22,7 +22,7 @@ export function Project({ title, link, img, github }) {
                             Github
                         </a>
                         <a href={link} target="_blank" className="text-[10px] tracking-wider bg-zinc-900 hover:bg-zinc-800 px-2 py-1 rounded-lg uppercase font-medium transition-colors duration-600 flex items-center gap-2">
-                            <PiGlobeDuotone className="text-blue-500 text-lg"/>
+                            <CiGlobe className="text-blue-500 text-lg"/>
                             Deploy
                         </a>
                     </div>

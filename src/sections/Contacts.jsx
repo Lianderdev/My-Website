@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "../components/ui/Input";
 import emailjs from 'emailjs-com';
-import { RiContactsBookLine } from "react-icons/ri";
+import { CiMail } from "react-icons/ci";
+
 import { useRef, useState } from "react";
 
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
@@ -49,7 +50,7 @@ export function Contact() {
     return (
         <section id="contacts">
             <div className="flex items-center gap-2 text-base sm:text-lg md:text-xl">
-                <RiContactsBookLine />
+                <CiMail />
                 <h2>Contatos</h2>
             </div>
 

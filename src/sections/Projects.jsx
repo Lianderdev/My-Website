@@ -1,6 +1,6 @@
 import { Project } from "../components/ui/Project";
 import { projects } from "../utils/projects";
-import { GoProjectSymlink } from "react-icons/go";
+import { CiFolderOn } from "react-icons/ci";
 
 import {
     Carousel,
@@ -16,7 +16,7 @@ export function Projects() {
     return (
         <section id="projects">
             <div className="flex items-center gap-3 text-base sm:text-lg md:text-xl">
-                <GoProjectSymlink />
+                <CiFolderOn />
                 <h2>Projetos</h2>
             </div>
 
