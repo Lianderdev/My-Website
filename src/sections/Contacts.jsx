@@ -16,7 +16,7 @@ export function Contact() {
     const messageRef = useRef()
 
     const [isLoading, setIsLoading] = useState(false)
-    const [modalSuccess, setModalSuccess] = useState(true);
+    const [modalSuccess, setModalSuccess] = useState(false);
     const [modalFailed, setModalFailed] = useState(false);
 
     function sendEmail(event) {

@@ -6,7 +6,7 @@ import '../styles/animations.css'
 
 export function Home() {
     return (
-        <section id="home" className="pt-10 md:pt-32 flex-row items-center gap-3">
+        <section id="home" className="pt-32 flex-row items-center gap-3">
             <div className="flex flex-col gap-3">
                 <h1 className="max-w-4xl text-2xl md:text-4xl font-black tracking-wide">
                     Olá! eu sou o liander souza, e atuo como desenvolvedor front-end & técnico em informática
