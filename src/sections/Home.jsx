@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { CiLocationOn } from "react-icons/ci";
 import { FaRegPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion"
-import { useInView } from "react-intersection-observer";
 import '../styles/animations.css'
 
 export function Home() {
