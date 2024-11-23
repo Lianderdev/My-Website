@@ -49,7 +49,7 @@ export function Experiences() {
                                     <img src={ifpa} alt={`logo do ${ifpa}`} />
                                 </div>
                                 <div className="flex flex-col text-xs">
-                                    <spam>Inmetro</spam>
+                                    <spam>Ifpa</spam>
                                     <span className=" text-zinc-200">Presencial</span>
                                 </div>
                             </div>
