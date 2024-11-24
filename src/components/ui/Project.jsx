@@ -1,13 +1,16 @@
+// Components
+import { Card, CardContent } from "../ui/card"
+
+// Icons
 import { MdArrowOutward } from "react-icons/md";
 import { CiGlobe } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
 
-import { Card, CardContent } from "../ui/card"
 
 export function Project({ title, link, img, github }) {
     return (
         <Card >
-            <CardContent>
+            <CardContent className='bg-transparent'>
                 <div className="w-full rounded-lg overflow-hidden group relative">
                     <img href={link} className="object-fill transform transition-transform duration-500 group-hover:scale-110 group-hover:z-10" src={img} alt={title} />
                     <a className="w-full h-full absolute flex items-center justify-center top-0 left-0 opacity-0 bg-black group-hover:opacity-50 transition-opacity" href={link} target="_blank">

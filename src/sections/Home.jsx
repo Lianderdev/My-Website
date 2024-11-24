@@ -1,7 +1,14 @@
+// Components
 import { Button } from "@/components/ui/button";
+
+// Icons
 import { CiLocationOn } from "react-icons/ci";
 import { FaRegPaperPlane } from "react-icons/fa";
+
+// Libs
 import { motion } from "framer-motion"
+
+// styles
 import '../styles/animations.css'
 
 export function Home() {
@@ -12,7 +19,6 @@ export function Home() {
                     Olá! eu sou o liander souza, e atuo como desenvolvedor front-end & técnico em informática
                 </h1>
                 <p className="max-w-2xl text-sm md:text-lg pl-[2px] text-zinc-300"> Apaixonado por criar interfaces intuitivas e acessíveis, alinhadas às necessidades dos usuários e aos objetivos da empresa.</p>
-
                 <div className="flex gap-4">
                     <div className="flex items-center gap-1 px-1">
                         <div className="w-2 h-2 bg-green-400 rounded-full mr-[7px] circle"></div>
@@ -37,8 +43,7 @@ export function Home() {
                     </motion.a>
                     <motion.a
                         whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.9 }}
-                    >
+                        whileTap={{ scale: 0.9 }}>
                         <Button className="w-full flex flex-col gap-1 md:gap-0 text:sm md:text-base p-5 rounded-full">
                             Currículo
                             <span className="text-[10px] text-blue-500 -mt-2">( Download )</span>

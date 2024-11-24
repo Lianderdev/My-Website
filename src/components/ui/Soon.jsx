@@ -1,3 +1,4 @@
+// Images
 import soon from "../../assets/img/logo-liander.png"
 
 export function Soon() {

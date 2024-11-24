@@ -1,3 +1,4 @@
+// Icons
 import { IoCalendarClearOutline } from "react-icons/io5";
 
 export function CardEducation({img, curso, nivel, instituicao, data }) {

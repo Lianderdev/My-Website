@@ -1,5 +1,10 @@
+// Components
 import { Tool } from "../components/ui/Tool";
+
+// Array
 import { tools } from "../utils/tools";
+
+// icons
 import { CiLaptop } from "react-icons/ci";
 
 export function Tools() {

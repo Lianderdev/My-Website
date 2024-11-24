@@ -1,13 +1,17 @@
+// Components
 import { Button } from "@/components/ui/button";
 import { Input } from "../components/ui/Input";
-import emailjs from 'emailjs-com';
+import {  Notification } from "../components/Notification/Notification";
+
+// Icons
 import { CiMail } from "react-icons/ci";
-
-import { useRef, useState } from "react";
-
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { HiOutlineRocketLaunch } from "react-icons/hi2";
+import { TbAlertTriangle } from "react-icons/tb";
 
-import { ModalSendFailed, ModalSendSucess } from "../components/modals/Modals";
+// libs
+import emailjs from 'emailjs-com';
+import { useRef, useState } from "react";
 
 export function Contact() {
 
@@ -34,27 +38,28 @@ export function Contact() {
             emailjs.send('service_s8dqj6i', 'template_30r3d2g', templateParams, 'dyXZYpcE0VEwEM0vN')
                 .then(() => {
                     setModalSuccess(true)
+                    setTimeout(() => {
+                        setModalSuccess(false)
+                    }, 5000)
                 }).catch(() => {
                     setModalFailed(true)
+                    setTimeout(() => {
+                        setModalFailed(false)
+                    }, 5000)
                 }).finally(() => {
                     setIsLoading(false)
                 })
         }
     }
 
-    function closeModal() {
-        setModalSuccess(false);
-        setModalFailed(false);
-    }
-
     return (
-        <section id="contacts">
+        <section id="contacts" className="relative">
             <div className="flex items-center gap-2 text-base sm:text-lg md:text-xl">
                 <CiMail />
                 <h2>Contatos</h2>
             </div>
 
-            <form onSubmit={sendEmail} className='flex flex-col gap-4 border bg-zinc-950 p-4 rounded-lg'>
+            <form onSubmit={sendEmail} className='flex flex-col gap-4 border bg-transparent p-4 rounded-lg'>
                 <div className='grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4'>
                     <Input label="name" type="text" name="Name" ref={nameRef} id="name" aria-label="Nome" placeholder="Digite seu nome" required />
                     <Input label="Email" type="email" name="Email" ref={emailRef} id="e-mail" aria-label="Email" placeholder="Digite seu E-mail" required />
@@ -63,8 +68,7 @@ export function Contact() {
                     <label htmlFor="message">Mensagem</label>
                     <textarea
                         className=" max-h-40 max-w-full border rounded-[5px] p-2 bg-zinc-950 text-zinc-50 font-medium focus:border-white"
-                        cols="30"
-                        rows="10"
+                        rows={30}
                         id="message"
                         placeholder="Digite sua mensagem"
                         required
@@ -92,16 +96,13 @@ export function Contact() {
             </p>
 
             {modalSuccess && (
-                <div className='fixed top-0 left-0 w-full h-full flex justify-center items-center z-50 bg-modal ooverflow-y-hidden'>
-                    <ModalSendSucess close={closeModal} />
-                </div>
+                    <Notification icon={<HiOutlineRocketLaunch />} message='Mensagem enviada!' information='Obrigado! Responderemos o mais rápido possível.'/>
             )}
 
             {modalFailed && (
-                <div className='fixed top-0 left-0 w-full h-full flex justify-center items-center z-50 bg-modal overflow-y-hidden'>
-                    <ModalSendFailed close={closeModal} />
-                </div>
+                    <Notification icon={<TbAlertTriangle />} message='Erro ao enviar a mensagem enviada!' information='Verifique se o seu dispositivo está conectado a uma rede Wi-Fi estável ou a uma conexão de internet.'/>
             )}
+
         </section>
     )
 }

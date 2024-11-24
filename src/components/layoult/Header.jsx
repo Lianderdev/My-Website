@@ -1,7 +1,12 @@
 import { Navigation } from "../ui/Navigation";
+
+// Components
 import { Soon } from "../ui/Soon";
+
+//libs
 import { motion } from "framer-motion"
 
+// Icons
 import { FiGithub } from "react-icons/fi";
 import { RiLinkedinLine } from "react-icons/ri";
 
@@ -13,6 +18,7 @@ export function Header() {
                     <a href="#home">
                         <Soon />
                     </a>
+                        <Navigation />
                 </div>
                 <div className="flex items-center gap-2 text-3xl text-zinc-700">
                     <motion.a 

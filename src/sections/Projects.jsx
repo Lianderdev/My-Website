@@ -1,16 +1,14 @@
+// Components
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { Project } from "../components/ui/Project";
+
+// Array 
 import { projects } from "../utils/projects";
+
+// Icons
 import { CiFolderOn } from "react-icons/ci";
 
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"
 
-//133790
 
 export function Projects() {
     return (

@@ -1,3 +1,4 @@
+// Hook
 import { forwardRef } from 'react'
 
 export const Input = forwardRef(({ label, value, handleGetInput, ...rest }, ref) => {

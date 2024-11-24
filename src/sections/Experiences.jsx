@@ -1,17 +1,17 @@
+// Components
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/accordion"
+
+// icons
 import { PiBagSimpleLight } from "react-icons/pi";
+
+// Images
 import inmetro from "../assets/img/inmetro.jpg"
 import ifpa from "../assets/img/if.png"
 
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "../components/ui/accordion"
 
 export function Experiences() {
     return (
-        <section>
+        <section id="experiences">
             <div className="flex items-center gap-3 text-base sm:text-lg md:text-xl" >
                 <PiBagSimpleLight />
                 <h2>Experiências</h2>
