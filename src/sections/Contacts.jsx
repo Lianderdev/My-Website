@@ -11,7 +11,7 @@ import { TbAlertTriangle } from "react-icons/tb";
 
 // libs
 import emailjs from 'emailjs-com';
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function Contact() {
 
@@ -38,19 +38,32 @@ export function Contact() {
             emailjs.send('service_s8dqj6i', 'template_30r3d2g', templateParams, 'dyXZYpcE0VEwEM0vN')
                 .then(() => {
                     setModalSuccess(true)
-                    setTimeout(() => {
-                        setModalSuccess(false)
-                    }, 5000)
                 }).catch(() => {
                     setModalFailed(true)
-                    setTimeout(() => {
-                        setModalFailed(false)
-                    }, 5000)
                 }).finally(() => {
                     setIsLoading(false)
                 })
         }
     }
+
+    useEffect(() => {
+        let timeoutId;
+
+        if (modalSuccess) {
+            timeoutId = setTimeout(() => {
+                setModalSuccess(false)
+            }, 5000)
+        }
+
+        if (modalFailed) {
+            timeoutId = setTimeout(() => {
+                setModalFailed(false)
+            }, 5000)
+        }
+
+        return () => clearTimeout(timeoutId)
+
+    }, [modalSuccess, modalFailed]);
 
     return (
         <section id="contacts" className="relative">
