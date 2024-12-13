@@ -73,7 +73,7 @@ export function Contact() {
             </div>
 
             <form onSubmit={sendEmail} className='flex flex-col gap-4 border bg-transparent p-4 rounded-lg'>
-                <div className='grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-4'>
+                <div className='grid md:grid-cols-2 gap-4'>
                     <Input label="name" type="text" name="Name" ref={nameRef} id="name" aria-label="Nome" placeholder="Digite seu nome" required />
                     <Input label="Email" type="email" name="Email" ref={emailRef} id="e-mail" aria-label="Email" placeholder="Digite seu E-mail" required />
                 </div>

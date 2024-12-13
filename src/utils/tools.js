@@ -9,15 +9,18 @@ import tailwind from "../assets/img/tailwind.png"
 import motion from "../assets/img/framer-motion.svg"
 import shadcn from "../assets/img/shadcnui.png"
 import git from "../assets/img/git.png"
+import typescript from "../assets/img/typescript.png"
+import styledComponents from "../assets/img/styledComponents.png"
 
 export const tools = [
     {id: 1, name: 'html', icon: html},
     {id: 2, name: 'css', icon: css},
     {id: 3, name: 'javascript', icon: js},
-    {id: 4, name: 'reactjs', icon: react},
-    {id: 5, name: 'tailwind', icon: tailwind},
-    {id: 6, name: 'git', icon: git},
-    {id: 7, name: 'vitejs', icon: vitejs},
-    {id: 8, name: 'shadcn ui', icon: shadcn},
-    {id: 9, name: 'framer motion', icon: motion},
+    {id: 4, name: 'typescript', icon: typescript},
+    {id: 5, name: 'reactjs', icon: react},
+    {id: 6, name: 'tailwind css', icon: tailwind},
+    {id: 7, name: 'styled-components', icon: styledComponents},
+    {id: 8, name: 'git', icon: git},
+    {id: 9, name: 'vitejs', icon: vitejs},
+    {id: 10, name: 'shadcn ui', icon: shadcn},
 ]
