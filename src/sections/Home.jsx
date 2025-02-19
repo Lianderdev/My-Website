@@ -8,6 +8,9 @@ import { FaRegPaperPlane } from "react-icons/fa";
 // Libs
 import { motion } from "framer-motion"
 
+// pdf 
+import curriculo from "../assets/Currículo - Liander Souza.pdf"
+
 // styles
 import '../styles/animations.css'
 
@@ -44,10 +47,12 @@ export function Home() {
                     <motion.a
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.9 }}>
-                        <Button className="w-full flex flex-col gap-1 md:gap-0 text:sm md:text-base p-5 rounded-full">
-                            Currículo
-                            <span className="text-[10px] text-blue-500 -mt-2">( Download )</span>
-                        </Button>
+                        <a href={curriculo} download>
+                            <Button className="w-full flex flex-col gap-1 md:gap-0 text:sm md:text-base p-5 rounded-full">
+                                Currículo
+                                <span className="text-[10px] text-blue-500 -mt-2">( Download )</span>
+                            </Button>
+                        </a>
                     </motion.a>
                 </div>
             </div>
