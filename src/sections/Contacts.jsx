@@ -15,6 +15,8 @@ import { useEffect, useRef, useState } from "react";
 
 export function Contact() {
 
+    console.log("teste")
+
     const nameRef = useRef()
     const emailRef = useRef()
     const messageRef = useRef()
